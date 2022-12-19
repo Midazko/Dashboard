@@ -30,60 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnJesper = new System.Windows.Forms.Button();
+            this.btnGame = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnContactUs = new System.Windows.Forms.Button();
             this.btnCalender = new System.Windows.Forms.Button();
             this.btnAnalytics = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.PnlFormLoader = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlNav = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.PnlFormLoader2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.btnJesper);
+            this.panel1.Controls.Add(this.btnGame);
             this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnContactUs);
             this.panel1.Controls.Add(this.btnCalender);
@@ -92,9 +64,51 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(184, 577);
+            this.panel1.Size = new System.Drawing.Size(188, 781);
             this.panel1.TabIndex = 0;
+            // 
+            // btnJesper
+            // 
+            this.btnJesper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnJesper.FlatAppearance.BorderSize = 0;
+            this.btnJesper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJesper.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnJesper.ForeColor = System.Drawing.Color.LightSalmon;
+            this.btnJesper.Image = ((System.Drawing.Image)(resources.GetObject("btnJesper.Image")));
+            this.btnJesper.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnJesper.Location = new System.Drawing.Point(0, 284);
+            this.btnJesper.Name = "btnJesper";
+            this.btnJesper.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
+            this.btnJesper.Size = new System.Drawing.Size(188, 32);
+            this.btnJesper.TabIndex = 1;
+            this.btnJesper.Text = "ToDo";
+            this.btnJesper.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnJesper.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnJesper.UseVisualStyleBackColor = true;
+            this.btnJesper.Click += new System.EventHandler(this.btnJesper_Click_1);
+            // 
+            // btnGame
+            // 
+            this.btnGame.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGame.FlatAppearance.BorderSize = 0;
+            this.btnGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGame.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGame.ForeColor = System.Drawing.Color.LightSalmon;
+            this.btnGame.Image = ((System.Drawing.Image)(resources.GetObject("btnGame.Image")));
+            this.btnGame.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGame.Location = new System.Drawing.Point(0, 252);
+            this.btnGame.Name = "btnGame";
+            this.btnGame.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
+            this.btnGame.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnGame.Size = new System.Drawing.Size(188, 32);
+            this.btnGame.TabIndex = 1;
+            this.btnGame.Text = "Game";
+            this.btnGame.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGame.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGame.UseVisualStyleBackColor = true;
+            this.btnGame.Click += new System.EventHandler(this.btnGame_Click_1);
             // 
             // btnSettings
             // 
@@ -104,9 +118,10 @@
             this.btnSettings.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSettings.ForeColor = System.Drawing.Color.LightSalmon;
             this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.Location = new System.Drawing.Point(0, 535);
+            this.btnSettings.Location = new System.Drawing.Point(0, 749);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(184, 42);
+            this.btnSettings.Size = new System.Drawing.Size(188, 32);
             this.btnSettings.TabIndex = 1;
             this.btnSettings.Text = "Settings";
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -122,12 +137,16 @@
             this.btnContactUs.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnContactUs.ForeColor = System.Drawing.Color.LightSalmon;
             this.btnContactUs.Image = ((System.Drawing.Image)(resources.GetObject("btnContactUs.Image")));
-            this.btnContactUs.Location = new System.Drawing.Point(0, 291);
+            this.btnContactUs.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnContactUs.Location = new System.Drawing.Point(0, 220);
+            this.btnContactUs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(184, 42);
+            this.btnContactUs.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
+            this.btnContactUs.Size = new System.Drawing.Size(188, 32);
             this.btnContactUs.TabIndex = 1;
             this.btnContactUs.Text = "Contact Us";
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnContactUs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnContactUs.UseVisualStyleBackColor = true;
             this.btnContactUs.Click += new System.EventHandler(this.btnContactUs_Click);
             this.btnContactUs.Leave += new System.EventHandler(this.btnContactUs_Leave);
@@ -140,12 +159,16 @@
             this.btnCalender.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCalender.ForeColor = System.Drawing.Color.LightSalmon;
             this.btnCalender.Image = ((System.Drawing.Image)(resources.GetObject("btnCalender.Image")));
-            this.btnCalender.Location = new System.Drawing.Point(0, 249);
+            this.btnCalender.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCalender.Location = new System.Drawing.Point(0, 188);
+            this.btnCalender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCalender.Name = "btnCalender";
-            this.btnCalender.Size = new System.Drawing.Size(184, 42);
+            this.btnCalender.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
+            this.btnCalender.Size = new System.Drawing.Size(188, 32);
             this.btnCalender.TabIndex = 1;
             this.btnCalender.Text = "Calender";
-            this.btnCalender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalender.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnCalender.UseVisualStyleBackColor = true;
             this.btnCalender.Click += new System.EventHandler(this.btnCalender_Click);
             this.btnCalender.Leave += new System.EventHandler(this.btnCalender_Leave);
@@ -158,12 +181,16 @@
             this.btnAnalytics.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAnalytics.ForeColor = System.Drawing.Color.LightSalmon;
             this.btnAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalytics.Image")));
-            this.btnAnalytics.Location = new System.Drawing.Point(0, 207);
+            this.btnAnalytics.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAnalytics.Location = new System.Drawing.Point(0, 156);
+            this.btnAnalytics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(184, 42);
+            this.btnAnalytics.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
+            this.btnAnalytics.Size = new System.Drawing.Size(188, 32);
             this.btnAnalytics.TabIndex = 1;
-            this.btnAnalytics.Text = "Analytics";
-            this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAnalytics.Text = "Music";
+            this.btnAnalytics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAnalytics.UseVisualStyleBackColor = true;
             this.btnAnalytics.Click += new System.EventHandler(this.btnAnalytics_Click);
             this.btnAnalytics.Leave += new System.EventHandler(this.btnAnalytics_Leave);
@@ -176,55 +203,60 @@
             this.btnDashboard.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDashboard.ForeColor = System.Drawing.Color.LightSalmon;
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
-            this.btnDashboard.Location = new System.Drawing.Point(0, 165);
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 124);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(184, 42);
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
+            this.btnDashboard.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnDashboard.Size = new System.Drawing.Size(188, 32);
             this.btnDashboard.TabIndex = 1;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDashboard.Text = "Home";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             this.btnDashboard.Leave += new System.EventHandler(this.btnDashboard_Leave);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.PnlFormLoader);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(184, 165);
+            this.panel2.Size = new System.Drawing.Size(188, 124);
             this.panel2.TabIndex = 0;
+            // 
+            // PnlFormLoader
+            // 
+            this.PnlFormLoader.Location = new System.Drawing.Point(0, -499);
+            this.PnlFormLoader.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PnlFormLoader.Name = "PnlFormLoader";
+            this.PnlFormLoader.Size = new System.Drawing.Size(161, 494);
+            this.PnlFormLoader.TabIndex = 5;
+            this.PnlFormLoader.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormLoader_Paint);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(26, 131);
+            this.label2.Location = new System.Drawing.Point(71, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 15);
+            this.label2.Size = new System.Drawing.Size(31, 12);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Some User Text Here";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.LightSalmon;
-            this.label1.Location = new System.Drawing.Point(45, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "User Name";
+            this.label2.Text = "Meny";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(60, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(46, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
+            this.pictureBox1.Size = new System.Drawing.Size(88, 77);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -232,31 +264,34 @@
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.LightSalmon;
-            this.pnlNav.Location = new System.Drawing.Point(0, 193);
+            this.pnlNav.Location = new System.Drawing.Point(0, 145);
+            this.pnlNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(3, 100);
+            this.pnlNav.Size = new System.Drawing.Size(5, 75);
             this.pnlNav.TabIndex = 1;
             // 
-            // label3
+            // lblTitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(200, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 47);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Dashboard";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTitle.Location = new System.Drawing.Point(217, 16);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(165, 42);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "InfoBoard";
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.DimGray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(579, 22);
+            this.textBox1.Location = new System.Drawing.Point(1177, 16);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 27);
+            this.textBox1.Size = new System.Drawing.Size(256, 24);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Search for something......";
             // 
@@ -266,285 +301,40 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(903, 22);
+            this.button1.Location = new System.Drawing.Point(1451, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
+            this.button1.Size = new System.Drawing.Size(22, 19);
             this.button1.TabIndex = 4;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel3
+            // PnlFormLoader2
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(212, 98);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(258, 130);
-            this.panel3.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(133, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(125, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label5.Location = new System.Drawing.Point(23, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 39);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "$1234";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(23, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 23);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Details of last 28 Days";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(23, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 31);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Earnings";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(494, 98);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(258, 130);
-            this.panel4.TabIndex = 5;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(133, 30);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(125, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label7.Location = new System.Drawing.Point(23, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 39);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "12K+";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(23, 95);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(176, 23);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Details of last 28 Days";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(23, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 31);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Downloads";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Location = new System.Drawing.Point(212, 249);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(258, 296);
-            this.panel5.TabIndex = 5;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(23, 67);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(209, 149);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(23, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(165, 31);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Some Progress";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(39, 230);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(180, 51);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Details of last 28 Days\r\nSome extra text here to make\r\nthe tab more attractive\r\n";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label14);
-            this.panel6.Location = new System.Drawing.Point(494, 249);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(434, 216);
-            this.panel6.TabIndex = 5;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(-18, 51);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(465, 133);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(23, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(150, 31);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Some Graphs";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Controls.Add(this.label11);
-            this.panel7.Controls.Add(this.label15);
-            this.panel7.Location = new System.Drawing.Point(776, 98);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(152, 130);
-            this.panel7.TabIndex = 5;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(16, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(133, 68);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Details of last 28\r\nSome extra text here \r\nmake the tab more \r\nattractive\r\n";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(12, 17);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(128, 31);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Downloads";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Gray;
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Location = new System.Drawing.Point(494, 486);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(434, 59);
-            this.panel8.TabIndex = 5;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(161, 13);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(234, 34);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Details of last 28 Some extra text here \r\nmake the tab more attractive\r\n";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(12, 13);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(128, 31);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Downloads";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PnlFormLoader2.BackColor = System.Drawing.Color.Gray;
+            this.PnlFormLoader2.Location = new System.Drawing.Point(204, 77);
+            this.PnlFormLoader2.Name = "PnlFormLoader2";
+            this.PnlFormLoader2.Size = new System.Drawing.Size(1269, 692);
+            this.PnlFormLoader2.TabIndex = 5;
+            this.PnlFormLoader2.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormLoader2_Paint);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1485, 781);
+            this.Controls.Add(this.PnlFormLoader2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pnlNav);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Gainsboro;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -553,22 +343,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -584,34 +358,14 @@
         private Button btnDashboard;
         private Panel panel2;
         private Label label2;
-        private Label label1;
         private PictureBox pictureBox1;
         private Panel pnlNav;
-        private Label label3;
+        private Label lblTitle;
         private TextBox textBox1;
         private Button button1;
-        private Panel panel3;
-        private PictureBox pictureBox2;
-        private Label label5;
-        private Label label6;
-        private Label label4;
-        private Panel panel4;
-        private PictureBox pictureBox3;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Panel panel5;
-        private PictureBox pictureBox4;
-        private Label label12;
-        private Label label10;
-        private Panel panel6;
-        private PictureBox pictureBox5;
-        private Label label14;
-        private Panel panel7;
-        private Label label11;
-        private Label label15;
-        private Panel panel8;
-        private Label label13;
-        private Label label16;
+        private Panel PnlFormLoader;
+        private Panel PnlFormLoader2;
+        private Button btnGame;
+        private Button btnJesper;
     }
 }
