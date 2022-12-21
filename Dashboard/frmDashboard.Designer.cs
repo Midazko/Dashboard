@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblSecond = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblDay = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -50,8 +52,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel8.SuspendLayout();
@@ -63,48 +67,67 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.lblDate);
+            this.panel5.Controls.Add(this.lblSecond);
+            this.panel5.Controls.Add(this.lblTime);
+            this.panel5.Controls.Add(this.lblDay);
             this.panel5.Location = new System.Drawing.Point(20, 149);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(364, 518);
             this.panel5.TabIndex = 6;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // pictureBox4
+            // lblDate
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(79, 165);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(183, 112);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.lblDate.AutoSize = true;
+            this.lblDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDate.Font = new System.Drawing.Font("DS-Digital", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDate.ForeColor = System.Drawing.Color.LightSalmon;
+            this.lblDate.Location = new System.Drawing.Point(110, 264);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(217, 38);
+            this.lblDate.TabIndex = 2;
+            this.lblDate.Text = "25 Juni 2022";
             // 
-            // label12
+            // lblSecond
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(108, 38);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 25);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Some Progress";
+            this.lblSecond.AutoSize = true;
+            this.lblSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSecond.Font = new System.Drawing.Font("DS-Digital", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSecond.ForeColor = System.Drawing.Color.GreenYellow;
+            this.lblSecond.Location = new System.Drawing.Point(210, 165);
+            this.lblSecond.Name = "lblSecond";
+            this.lblSecond.Size = new System.Drawing.Size(42, 29);
+            this.lblSecond.TabIndex = 1;
+            this.lblSecond.Text = "22";
             // 
-            // label10
+            // lblTime
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(90, 367);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(155, 39);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Details of last 28 Days\r\nSome extra text here to make\r\nthe tab more attractive\r\n";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTime.AutoSize = true;
+            this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTime.Font = new System.Drawing.Font("DS-Digital", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTime.ForeColor = System.Drawing.Color.Aquamarine;
+            this.lblTime.Location = new System.Drawing.Point(47, 144);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(175, 65);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "22:22";
+            // 
+            // lblDay
+            // 
+            this.lblDay.AutoSize = true;
+            this.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDay.Font = new System.Drawing.Font("DS-Digital", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDay.ForeColor = System.Drawing.Color.Aquamarine;
+            this.lblDay.Location = new System.Drawing.Point(60, 356);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(128, 33);
+            this.lblDay.TabIndex = 0;
+            this.lblDay.Text = "Torsdag";
+            this.lblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
             // 
@@ -305,6 +328,33 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Earnings";
             // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(20, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(331, 86);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "The Clock";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(81, 435);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(256, 42);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Keep track of time, date and day\r\nwith this simple Widget";
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -321,7 +371,6 @@
             this.Text = "frmDashboard";
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -338,9 +387,8 @@
         #endregion
 
         private Panel panel5;
-        private PictureBox pictureBox4;
-        private Label label12;
-        private Label label10;
+        private Label lblTime;
+        private Label lblDay;
         private Panel panel6;
         private PictureBox pictureBox5;
         private Label label14;
@@ -358,5 +406,10 @@
         private Label label3;
         private Label label11;
         private Label label15;
+        private Label lblDate;
+        private Label lblSecond;
+        private System.Windows.Forms.Timer timer;
+        private Label label8;
+        private Label label7;
     }
 }

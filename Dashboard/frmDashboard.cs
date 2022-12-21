@@ -16,5 +16,19 @@ namespace Dashboard
         {
             InitializeComponent();
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("HH:mm");
+            lblSecond.Text = DateTime.Now.ToString("ss");
+            lblDate.Text = DateTime.Now.ToString("dd MMM yyyy");
+            lblDay.Text = DateTime.Now.ToString("dddd");
+            lblSecond.Location = new Point(lblTime.Location.X + lblTime.Width -5, lblSecond.Location.Y);
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+            timer.Start();
+        }
     }
 }
