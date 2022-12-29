@@ -4,6 +4,21 @@ namespace Dashboard
 {
     public partial class Form1 : Form
     {
+        // A method to make the form moveable by hoding down left mousebutton, Its importent the code is implemented in the Main Form
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case 0x84:
+                    base.WndProc(ref m);
+                    if ((int)m.Result == 0x1)
+                        m.Result = (IntPtr)0x2;
+                    return;
+            }
+
+            base.WndProc(ref m);
+        }
+
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
 
