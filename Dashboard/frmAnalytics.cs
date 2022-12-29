@@ -14,16 +14,16 @@ namespace Dashboard
 {
     public partial class frmAnalytics : Form
     {
-        SoundPlayer player1 = new SoundPlayer("Black_Sabbath_-_Sabotage_-_04_-_Megalomania[1].wav");
-        SoundPlayer player2 = new SoundPlayer("Losing_My_Edge[1].wav");
-        SoundPlayer player3 = new SoundPlayer("ABBA_-_Waterloo_-_05_-_My_Mama_Said[1].wav");
-        SoundPlayer player4 = new SoundPlayer("Black_Sabbath_-_Paranoid_[Deluxe_Edition_2016]_-_CD1_-_06_-_Hand_of_Doom[1].wav");
-        SoundPlayer player5 = new SoundPlayer("David_Bowie_-_Aladdin_Sane_-_10_-_Lady_Grinning_Soul[1].wav");
-        SoundPlayer player6 = new SoundPlayer("David_Byrne_-_Grown_Backwards_-_03_-_Au_fond_du_temple_saint[1].wav");
-        SoundPlayer player7 = new SoundPlayer("Janis_Joplin_-_Pearl_-_07_-_Me_And_Bobby_McGee[1].wav");
-        SoundPlayer player8 = new SoundPlayer("Jethro_Tull_-_Aqualung_-_40th_Anniversary_Special_Edition_-_CD1_-_10_-_Locomotive_Breath[1].wav");
-        SoundPlayer player9 = new SoundPlayer("Kebnekajse_-_Idioten_-_08_-_Senpolska[1].wav");
-        SoundPlayer player10 = new SoundPlayer("Massive_Attack_-_Mezzanine_-_09_-_Mezzanine[1].wav");
+        SoundPlayer player1 = new SoundPlayer("piano-g_G#_major.wav");
+        SoundPlayer player2 = new SoundPlayer("piano-bb_A#_major.wav");
+        SoundPlayer player3 = new SoundPlayer("piano-c_C#_major.wav");
+        SoundPlayer player4 = new SoundPlayer("piano-eb_D#_major.wav");
+        SoundPlayer player5 = new SoundPlayer("piano-f_F#_major.wav");
+        SoundPlayer player6 = new SoundPlayer("piano-f_F_major.wav");
+        SoundPlayer player7 = new SoundPlayer("piano-a_A_major.wav");
+        SoundPlayer player8 = new SoundPlayer("piano-b_B_major.wav");
+        SoundPlayer player9 = new SoundPlayer("piano-d_D_major.wav");
+        SoundPlayer player10 = new SoundPlayer("piano-e_E_major.wav");
         public frmAnalytics()
         {
             InitializeComponent();
