@@ -124,7 +124,7 @@ namespace Dashboard
 
             lblTitle.Text = "Jesper";
             this.PnlFormLoader2.Controls.Clear();
-            frmJesper FrmDashboard_Vrb = new frmJesper() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmNotes FrmDashboard_Vrb = new frmNotes() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
             this.PnlFormLoader2.Controls.Add(FrmDashboard_Vrb);
             FrmDashboard_Vrb.Show();
