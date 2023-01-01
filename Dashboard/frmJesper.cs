@@ -58,13 +58,13 @@ namespace Dashboard
             NotesBox.Text = "";
         }
 
-        private void DeleteButton_Click(object sender, EventArgs a)
+        private void DeleteButton_Click(object sender, EventArgs e)
         {
             try
             {
                 notes.Rows[PreviousNotes.CurrentCell.RowIndex].Delete();
             }
-            catch(Exception e) { Console.WriteLine("Not a valid note");
+            catch(Exception ex) { Console.WriteLine("Not a valid note");
             }
         }
 
