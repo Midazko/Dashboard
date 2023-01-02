@@ -83,7 +83,7 @@
             this.btnJesper.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0);
             this.btnJesper.Size = new System.Drawing.Size(188, 32);
             this.btnJesper.TabIndex = 1;
-            this.btnJesper.Text = "ToDo";
+            this.btnJesper.Text = "Notes";
             this.btnJesper.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnJesper.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnJesper.UseVisualStyleBackColor = true;

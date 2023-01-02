@@ -137,7 +137,7 @@ namespace Dashboard
             pnlNav.Left = btnJesper.Left;
             btnJesper.BackColor = Color.FromKnownColor(KnownColor.DimGray);
 
-            lblTitle.Text = "Jesper";
+            lblTitle.Text = "Notes";
             this.PnlFormLoader2.Controls.Clear();
             frmNotes FrmDashboard_Vrb = new frmNotes() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             FrmDashboard_Vrb.FormBorderStyle = FormBorderStyle.None;
