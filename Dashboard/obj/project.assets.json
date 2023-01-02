@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Carl Axel\\.nuget\\packages\\": {}
+    "C:\\Users\\jesda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\Dashboard\\Dashboard\\Dashboard.csproj",
+      "projectUniqueName": "C:\\Users\\jesda\\OneDrive\\Dokument\\GitHub\\Dashboard\\Dashboard\\Dashboard.csproj",
       "projectName": "Dashboard",
-      "projectPath": "D:\\Git\\Dashboard\\Dashboard\\Dashboard.csproj",
-      "packagesPath": "C:\\Users\\Carl Axel\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\Dashboard\\Dashboard\\obj\\",
+      "projectPath": "C:\\Users\\jesda\\OneDrive\\Dokument\\GitHub\\Dashboard\\Dashboard\\Dashboard.csproj",
+      "packagesPath": "C:\\Users\\jesda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jesda\\OneDrive\\Dokument\\GitHub\\Dashboard\\Dashboard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Carl Axel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jesda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
