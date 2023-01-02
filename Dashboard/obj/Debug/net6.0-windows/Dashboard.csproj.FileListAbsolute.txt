@@ -60,7 +60,6 @@ C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-win
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.frmContactUs.resources
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.frmDashboard.resources
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.frmGame.resources
-C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.frmJesper.resources
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.frmSettings.resources
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.Properties.Resources.resources
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.csproj.GenerateResource.cache
@@ -73,3 +72,4 @@ C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-win
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.pdb
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.genruntimeconfig.cache
 C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\ref\Dashboard.dll
+C:\Users\jesda\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.frmNotes.resources
