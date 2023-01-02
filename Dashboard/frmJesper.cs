@@ -74,5 +74,7 @@ namespace Dashboard
             NotesBox.Text = notes.Rows[PreviousNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
             editing = true;
         }
+
+        
     }
 }

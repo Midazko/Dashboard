@@ -44,6 +44,7 @@
             // 
             // TitleBox
             // 
+            this.TitleBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TitleBox.ForeColor = System.Drawing.Color.LightSalmon;
             this.TitleBox.Location = new System.Drawing.Point(745, 113);
             this.TitleBox.Name = "TitleBox";
@@ -52,11 +53,12 @@
             // 
             // NotesBox
             // 
+            this.NotesBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NotesBox.ForeColor = System.Drawing.Color.LightSalmon;
             this.NotesBox.Location = new System.Drawing.Point(745, 182);
             this.NotesBox.Multiline = true;
             this.NotesBox.Name = "NotesBox";
-            this.NotesBox.Size = new System.Drawing.Size(496, 459);
+            this.NotesBox.Size = new System.Drawing.Size(496, 454);
             this.NotesBox.TabIndex = 1;
             // 
             // Title
@@ -97,11 +99,12 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.PreviousNotes.DefaultCellStyle = dataGridViewCellStyle1;
             this.PreviousNotes.GridColor = System.Drawing.Color.Black;
-            this.PreviousNotes.Location = new System.Drawing.Point(12, 182);
+            this.PreviousNotes.Location = new System.Drawing.Point(24, 182);
             this.PreviousNotes.Name = "PreviousNotes";
             this.PreviousNotes.RowTemplate.Height = 25;
-            this.PreviousNotes.Size = new System.Drawing.Size(463, 459);
+            this.PreviousNotes.Size = new System.Drawing.Size(463, 454);
             this.PreviousNotes.TabIndex = 4;
+            
             this.PreviousNotes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PreviousNotes_CellDoubleClick);
             // 
             // EditButton
@@ -160,7 +163,7 @@
             // 
             this.SavedNotes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.SavedNotes.ForeColor = System.Drawing.Color.LightSalmon;
-            this.SavedNotes.Location = new System.Drawing.Point(12, 151);
+            this.SavedNotes.Location = new System.Drawing.Point(24, 151);
             this.SavedNotes.Name = "SavedNotes";
             this.SavedNotes.Size = new System.Drawing.Size(463, 28);
             this.SavedNotes.TabIndex = 9;
