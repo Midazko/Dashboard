@@ -60,7 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.IndianRed;
+            this.label2.ForeColor = System.Drawing.Color.Salmon;
             this.label2.Location = new System.Drawing.Point(606, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 31);
