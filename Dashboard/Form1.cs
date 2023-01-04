@@ -36,6 +36,7 @@ namespace Dashboard
         public Form1()
         {
             InitializeComponent();
+            APIhelper.InitializeClient();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             pnlNav.Height = btnDashboard.Height;
             pnlNav.Top = btnDashboard.Top;

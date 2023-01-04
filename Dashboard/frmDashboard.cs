@@ -15,6 +15,19 @@ namespace Dashboard
         public frmDashboard()
         {
             InitializeComponent();
+            Weatherdisplay();
+            APIhelper.InitializeClient();
+        }
+        private async void Weatherdisplay()
+        {
+            Webmodelresult? weatherinfo;
+            weatherinfo = await WebProccesor.LoadWeb();
+            label_weather.Text = $"Temprature in Motala: {Weatherstring(weatherinfo, "t")}°C";
+        }
+        public static string Weatherstring(Webmodelresult weatherInfo, string temp)
+        {
+            var parameter = weatherInfo.TimeSeries[0].Parameters.FirstOrDefault(parameters => parameters.Name == temp);
+            return parameter.Values[0];
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -32,3 +45,4 @@ namespace Dashboard
         }
     }
 }
+
