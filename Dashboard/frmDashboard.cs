@@ -22,7 +22,7 @@ namespace Dashboard
         {
             Webmodelresult? weatherinfo;
             weatherinfo = await WebProccesor.LoadWeb();
-            label_weather.Text = $"Temprature in Motala: {Weatherstring(weatherinfo, "t")}°C";
+            label_weather.Text = $"Temperature in Motala: {Weatherstring(weatherinfo, "t")}°C";
         }
         public static string Weatherstring(Webmodelresult weatherInfo, string temp)
         {
