@@ -5,7 +5,83 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {}
+    ".NETCoreApp,Version=v6.0": {
+      "Bunifu.UI.WinForms/6.0.2": {
+        "runtime": {
+          "lib/net40/Bunifu.UI.WinForms.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Guna.UI2.WinForms/2.0.3.9": {
+        "dependencies": {
+          "System.Management": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Guna.UI2.dll": {
+            "assemblyVersion": "2.0.3.9",
+            "fileVersion": "2.0.3.9"
+          }
+        }
+      },
+      "System.CodeDom/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "System.Management/6.0.0": {
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "Bunifu.UI.WinForms/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-THRyBBOeDoOwCVhTXfedCCQEGm5gNXxZQDrRhNm0oFXUQWU+1kVnU5/uQzwSwBaaPF3VKXgK3uFsGNTGA5RGIw==",
+      "path": "bunifu.ui.winforms/6.0.2",
+      "hashPath": "bunifu.ui.winforms.6.0.2.nupkg.sha512"
+    },
+    "Guna.UI2.WinForms/2.0.3.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zpuviaQrE90eAFA7BQVp7c/8te3IeiB+kVxbhD55rJ3JYStkaO8OrU6dgEsqWSCzAcaNT7EeiaSwxrFWho+Hvg==",
+      "path": "guna.ui2.winforms/2.0.3.9",
+      "hashPath": "guna.ui2.winforms.2.0.3.9.nupkg.sha512"
+    },
+    "System.CodeDom/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "path": "system.codedom/6.0.0",
+      "hashPath": "system.codedom.6.0.0.nupkg.sha512"
+    },
+    "System.Management/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sHsESYMmPDhQuOC66h6AEOs/XowzKsbT9srMbX71TCXP58hkpn1BqBjdmKj1+DCA/WlBETX1K5WjQHwmV0Txrg==",
+      "path": "system.management/6.0.0",
+      "hashPath": "system.management.6.0.0.nupkg.sha512"
+    }
+  }
 }
