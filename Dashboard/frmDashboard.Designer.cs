@@ -31,13 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblSecond = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblDay = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.label_weather = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -53,11 +55,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,15 +80,37 @@
             this.panel5.TabIndex = 6;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(81, 435);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(256, 42);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Keep track of time, date and day\r\nwith this simple Widget";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(20, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(331, 86);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "The Clock";
+            // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDate.Font = new System.Drawing.Font("DS-Digital", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDate.ForeColor = System.Drawing.Color.LightSalmon;
             this.lblDate.Location = new System.Drawing.Point(110, 264);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(217, 38);
+            this.lblDate.Size = new System.Drawing.Size(247, 44);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "25 Juni 2022";
             // 
@@ -96,11 +118,11 @@
             // 
             this.lblSecond.AutoSize = true;
             this.lblSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSecond.Font = new System.Drawing.Font("DS-Digital", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSecond.ForeColor = System.Drawing.Color.GreenYellow;
             this.lblSecond.Location = new System.Drawing.Point(210, 165);
             this.lblSecond.Name = "lblSecond";
-            this.lblSecond.Size = new System.Drawing.Size(42, 29);
+            this.lblSecond.Size = new System.Drawing.Size(48, 33);
             this.lblSecond.TabIndex = 1;
             this.lblSecond.Text = "22";
             // 
@@ -108,11 +130,11 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTime.Font = new System.Drawing.Font("DS-Digital", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTime.ForeColor = System.Drawing.Color.Aquamarine;
             this.lblTime.Location = new System.Drawing.Point(47, 144);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(175, 65);
+            this.lblTime.Size = new System.Drawing.Size(201, 75);
             this.lblTime.TabIndex = 0;
             this.lblTime.Text = "22:22";
             // 
@@ -120,11 +142,11 @@
             // 
             this.lblDay.AutoSize = true;
             this.lblDay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDay.Font = new System.Drawing.Font("DS-Digital", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblDay.ForeColor = System.Drawing.Color.Aquamarine;
             this.lblDay.Location = new System.Drawing.Point(60, 356);
             this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(128, 33);
+            this.lblDay.Size = new System.Drawing.Size(145, 39);
             this.lblDay.TabIndex = 0;
             this.lblDay.Text = "Torsdag";
             this.lblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,35 +154,38 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label14);
+            this.panel6.Controls.Add(this.label_weather);
+            this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Location = new System.Drawing.Point(410, 149);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(843, 451);
             this.panel6.TabIndex = 7;
             // 
-            // pictureBox5
+            // label_weather
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(130, 183);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(625, 179);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.label_weather.BackColor = System.Drawing.Color.Transparent;
+            this.label_weather.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_weather.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label_weather.Location = new System.Drawing.Point(109, 154);
+            this.label_weather.Name = "label_weather";
+            this.label_weather.Size = new System.Drawing.Size(397, 112);
+            this.label_weather.TabIndex = 1;
+            this.label_weather.Text = "Väder";
+            this.label_weather.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label14
+            // pictureBox3
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(357, 38);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(124, 25);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Some Graphs";
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.label_weather.Parent = this.pictureBox3;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(109, 18);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(625, 413);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // panel8
             // 
@@ -333,28 +358,6 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(20, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(331, 86);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "The Clock";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(81, 435);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(256, 42);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Keep track of time, date and day\r\nwith this simple Widget";
-            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -372,8 +375,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -390,8 +392,6 @@
         private Label lblTime;
         private Label lblDay;
         private Panel panel6;
-        private PictureBox pictureBox5;
-        private Label label14;
         private Panel panel8;
         private Label label13;
         private Label label16;
@@ -411,5 +411,7 @@
         private System.Windows.Forms.Timer timer;
         private Label label8;
         private Label label7;
+        private Label label_weather;
+        private PictureBox pictureBox3;
     }
 }
