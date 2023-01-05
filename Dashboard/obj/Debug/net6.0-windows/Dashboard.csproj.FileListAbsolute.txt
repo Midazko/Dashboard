@@ -185,3 +185,5 @@ C:\Users\riand\OneDrive\Dokument\GitHub\Dashboard\Dashboard\bin\Debug\net6.0-win
 C:\Users\riand\OneDrive\Dokument\GitHub\Dashboard\Dashboard\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.ServiceProcess.ServiceController.dll
 C:\Users\riand\OneDrive\Dokument\GitHub\Dashboard\Dashboard\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Speech.dll
 C:\Users\riand\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.csproj.CopyComplete
+C:\Users\riand\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.UserControlBlank.resources
+C:\Users\riand\OneDrive\Dokument\GitHub\Dashboard\Dashboard\obj\Debug\net6.0-windows\Dashboard.UserControlDays.resources
