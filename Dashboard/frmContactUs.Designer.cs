@@ -1440,7 +1440,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1253, 696);
+            this.ClientSize = new System.Drawing.Size(1253, 772);
             this.Controls.Add(this.bunifuCards6);
             this.Controls.Add(this.bunifuCards5);
             this.Controls.Add(this.bunifuCards3);
