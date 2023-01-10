@@ -85,8 +85,6 @@
             // 
             // PreviousNotes
             // 
-            this.PreviousNotes.DefaultCellStyle.Font = new Font("Arial", 12F);
-            this.PreviousNotes.ForeColor = Color.LightSalmon;
             this.PreviousNotes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PreviousNotes.BackgroundColor = System.Drawing.Color.White;
             this.PreviousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -104,7 +102,6 @@
             this.PreviousNotes.RowTemplate.Height = 25;
             this.PreviousNotes.Size = new System.Drawing.Size(463, 454);
             this.PreviousNotes.TabIndex = 4;
-            
             this.PreviousNotes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PreviousNotes_CellDoubleClick);
             // 
             // EditButton
@@ -167,7 +164,7 @@
             this.SavedNotes.Name = "SavedNotes";
             this.SavedNotes.Size = new System.Drawing.Size(463, 28);
             this.SavedNotes.TabIndex = 9;
-            this.SavedNotes.Text = "Saved Notes";
+            this.SavedNotes.Text = "Saved Notes:";
             this.SavedNotes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmNotes
