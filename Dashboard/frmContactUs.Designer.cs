@@ -461,7 +461,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Cambria", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label31.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label31.Location = new System.Drawing.Point(67, 256);
+            this.label31.Location = new System.Drawing.Point(59, 256);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(134, 12);
             this.label31.TabIndex = 8;
@@ -622,7 +622,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(4, 230);
+            this.pictureBox11.Location = new System.Drawing.Point(3, 235);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(37, 31);
@@ -635,7 +635,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label5.Location = new System.Drawing.Point(53, 238);
+            this.label5.Location = new System.Drawing.Point(55, 246);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 12);
             this.label5.TabIndex = 8;
@@ -985,9 +985,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label10.Location = new System.Drawing.Point(52, 249);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 12);
+            this.label10.Size = new System.Drawing.Size(153, 12);
             this.label10.TabIndex = 8;
-            this.label10.Text = "vithetsnorm@hotmail.com";
+            this.label10.Text = "kravmagakillen@hotmail.com";
             // 
             // button7
             // 
