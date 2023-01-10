@@ -255,7 +255,7 @@ namespace Dashboard
             gameTimer.Start();
         }
 
-        A
+        
         private void EatFood()
         {
 
