@@ -85,6 +85,8 @@
             // 
             // PreviousNotes
             // 
+            this.PreviousNotes.DefaultCellStyle.Font = new Font("Arial", 12F);
+            this.PreviousNotes.ForeColor = Color.LightSalmon;
             this.PreviousNotes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PreviousNotes.BackgroundColor = System.Drawing.Color.White;
             this.PreviousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
